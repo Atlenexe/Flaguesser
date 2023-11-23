@@ -1,0 +1,16 @@
+<body>
+    <div class='content'>
+        <h2>Bienvenue sur FLAGUESSER</h2>
+        <p>Ce jeu consiste à trouver de quel pays provient le drapeau affiché à l'écran parmi les 4 propositions. <br>
+            Le score se compte en série de bonnes réponses, appelé "Guess streak". <br>
+            Votre meilleure suite est de <strong>{{bestStreak}}</strong>
+        </p>
+        <p>Ce site web utilise l'API <a href="https://flagcdn.com/" target="_blank" class="link">Flagcdn</a>
+            <br>
+            Ainsi que la librairie <a href="https://primefaces.org/primeng/progressspinner/" target="_blank"
+                class="link">PrimeNG</a> (pour l'animation de loading)
+        </p>
+        <br>
+        <button class='restart-button' [routerLink]="'/'">Jouer</button>
+    </div>
+</body>

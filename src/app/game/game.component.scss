@@ -1,0 +1,80 @@
+.country-flag {
+    height: 200px;
+    margin: 50px auto;
+    border-radius: 10px;
+    box-shadow: 0 0 30px rgba(255, 255, 255, 0.1);
+}
+
+.buttons-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.button {
+    width: 48%;
+    margin: 1%;
+    padding: 20px;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 10px;
+    border: 0;
+    transition: .2s;
+    background-color: rgba(255, 255, 255, 0.65);
+}
+
+@media (hover: hover) {
+    .button:hover {
+        background-color: rgba(255, 255, 255, 1);
+        cursor: pointer;
+        transform: scale(1.03);
+    }
+}
+
+@media screen and (max-width: 900px) {
+
+    .country-flag,
+    .spinner {
+        height: 180px;
+    }
+
+    .button {
+        font-size: 15px;
+    }
+}
+
+@media screen and (max-width: 800px) {
+
+    .country-flag,
+    .spinner {
+        height: 160px;
+    }
+
+    .button {
+        font-size: 14px;
+    }
+}
+
+@media screen and (max-width: 400px) {
+
+    .country-flag,
+    .spinner {
+        height: 140px;
+    }
+
+    .button {
+        width: 70%;
+    }
+}
+
+@media screen and (max-width: 300px) {
+
+    .country-flag,
+    .spinner {
+        height: 100px;
+    }
+
+    .button {
+        width: 90%;
+    }
+}

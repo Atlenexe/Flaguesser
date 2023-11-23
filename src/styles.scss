@@ -1,0 +1,107 @@
+body {
+    height: 100%;
+    margin: 0;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-image: linear-gradient(171.8deg, rgba(5, 111, 146, 1) 13.5%, rgba(6, 57, 84, 1) 78.6%);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h2 {
+    text-align: center;
+    color: white;
+}
+
+h3 {
+    text-align: center;
+    line-height: 2rem;
+    color: white;
+}
+
+.red {
+    color: rgb(255, 91, 91);
+}
+
+strong {
+    color: white;
+}
+
+.content {
+    margin: 0 auto;
+    text-align: center;
+    width: 60%;
+}
+
+.restart-button {
+    width: 160px;
+    padding: 15px;
+    margin: 0 auto;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 10px;
+    border: 0;
+    transition: .2s;
+    color: white;
+    background-color: rgb(107, 187, 38);
+}
+
+.restart-button:hover {
+    cursor: pointer;
+    transform: scale(1.05);
+}
+
+.result-container {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.link {
+    font-size: 19px;
+    text-decoration: underline;
+    font-weight: bold;
+    color: rgb(235, 235, 235);
+    transition: .2s;
+    margin: 1rem auto;
+}
+
+.link:hover {
+    color: rgba(255, 255, 255);
+}
+
+.footer-link {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    padding-bottom: 1rem;
+}
+
+.spinner {
+    height: 200px;
+    margin: 50px auto;
+}
+
+.p-progress-spinner-circle {
+    stroke: white !important;
+}
+
+@media screen and (max-width: 900px) {
+    .content {
+        width: 80%;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .content {
+        width: 90%;
+    }
+}
+
+@media screen and (max-height: 705px) {
+    .footer-link {
+        position: relative;
+        padding-top: 0.5rem;
+    }
+}

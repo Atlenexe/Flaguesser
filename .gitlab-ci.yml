@@ -1,0 +1,16 @@
+image: node
+pages:
+  tags:
+    - docker
+  cache:
+    paths:
+      - node_modules/
+  script:    
+    - npm install -g @angular/cli@^14.2.0
+    - npm install
+    - npm run buildProd
+  artifacts:
+    paths:
+      - public
+  only:
+    - main

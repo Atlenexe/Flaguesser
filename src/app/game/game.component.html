@@ -1,0 +1,31 @@
+<body>
+    <div class="content">
+        <p-progressSpinner *ngIf="loading" class="spinner"></p-progressSpinner>
+        <img *ngIf="countryCode !== ''" [hidden]="loading" (load)="onLoad()"
+            src="https://flagcdn.com/w320/{{countryCode}}.png" alt="Drapeau à trouver" class="country-flag">
+        <h2>Guess streak : {{streak}}</h2>
+
+        <div *ngIf="disable; then resultats else jeu"></div>
+
+        <ng-template #resultats>
+            <div class="result-container">
+                <h3><span class="red">Perdu, tu as répondu {{guess}}, mais la bonne réponse était {{countryName}}</span>
+                    <br>
+                    Votre meilleure suite est de {{bestStreak}}</h3>
+                <button class="restart-button" (click)="restart()">Recommencer</button>
+            </div>
+        </ng-template>
+
+        <ng-template #jeu>
+            <div class="buttons-container">
+                <ng-template ngFor let-proposition [ngForOf]="propositionsFinales">
+                    <button class="button" (click)="submit(proposition)"
+                        [disabled]="disable ? true : false">{{proposition}}</button>
+                </ng-template>
+            </div>
+        </ng-template>
+    </div>
+    <div class="footer-link">
+        <a routerLink="/regles" class="link">Règles</a>
+    </div>
+</body>

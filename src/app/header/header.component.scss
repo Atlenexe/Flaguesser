@@ -1,0 +1,33 @@
+.title-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    
+}
+
+h1 {
+    font-family: 'Paytone One', sans-serif;
+    font-size: 2.4rem;
+    text-align: center;
+    color: white;
+    transition: .4s;
+    width: auto;
+    display: inline-block;
+}
+
+h1:hover {
+    cursor: pointer;
+    text-shadow: 0 0 8px rgba(255, 255, 255, 0.5),
+}
+
+@media screen and (max-width: 400px) {
+    h1{
+        font-size: 2rem; 
+    }
+}
+
+@media screen and (max-width: 300px) {
+    h1{
+        font-size: 1.8rem; 
+    }
+}
